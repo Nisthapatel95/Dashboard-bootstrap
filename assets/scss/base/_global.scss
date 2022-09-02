@@ -1,0 +1,20 @@
+// Global styles goes here
+html,
+body {
+    font-family:  'sans-serif';
+    height  : 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.overflow-vertical {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.wrapper-bg{
+    background-color: white;
+}

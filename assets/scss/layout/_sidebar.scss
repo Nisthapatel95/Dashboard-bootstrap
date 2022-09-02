@@ -1,0 +1,30 @@
+// Styles for Sidebar lies here
+.primary-aside {
+    flex     : 0 0 120px;
+    max-width: 120px;
+
+    // @include media-breakpoint-down(sm) {
+    //     flex     : 0 0 80px;
+    //     max-width: 80px;
+    // }
+
+    .nav {
+        &-item {
+            &:not(:last-child) {
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+            }
+
+            .nav-link {
+                border-radius: $nav-link-border-radius;
+
+                &.active,
+                &:hover {
+                    background-color: rgba($nav-link-active-bg, 0.15);
+                    color           : $nav-link-active-color;
+                }
+            }
+        }
+    }
+}
